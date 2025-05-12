@@ -12,27 +12,18 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-<!--               <li><a href="">Users Online: <?php // echo users_online(); ?></a></li>-->
-               <li><a href="">Users Online: <span class="usersonline"></span></a></li>
-               <li><a href="../index.php">HOME SITE</a></li>
-         
-               
+                <!--               <li><a href="">Users Online: <?php // echo users_online(); 
+                                                                ?></a></li>-->
+                <li><a href="">Users Online: <span class="usersonline"></span></a></li>
+                <li><a href="../index.php">HOME SITE</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 
-                    
-                   <?php 
-                        
-                    if(isset($_SESSION['username'])){
-                        
-                      echo $_SESSION['username'];  
-                        
-                    }    
-                        
-                        
-                    ?>
-                    
-                     
-                       <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
+                        <?php
+                        if (isset($_SESSION['username'])) {
+                            echo $_SESSION['username'];
+                        }
+                        ?>
+                        <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -50,7 +41,7 @@
                     <li>
                         <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-                     <li>
+                    <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown"><i class="fa fa-fw fa-arrows-v"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="posts_dropdown" class="collapse">
                             <li>
@@ -80,7 +71,7 @@
                     </li>
                     <li class="">
                         <a href="profile.php"><i class="fa fa-fw fa-file"></i> Profile</a>
-                    </li> 
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
