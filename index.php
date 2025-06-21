@@ -66,10 +66,6 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-            <h1 class="page-header">
-                Welcome To My Blog Website
-                <small>Farhad</small>
-            </h1>
             <?php
             // Calculate Pagination
             $per_page = 5;
